@@ -18,6 +18,8 @@
 		91989C871778B86B00C1042D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 91989C861778B86B00C1042D /* Default-568h@2x.png */; };
 		91989C8A1778B86B00C1042D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91989C881778B86B00C1042D /* MainStoryboard.storyboard */; };
 		91989C8D1778B86B00C1042D /* InstaAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91989C8C1778B86B00C1042D /* InstaAddViewController.m */; };
+		91989C941778BAA000C1042D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91989C931778BAA000C1042D /* MobileCoreServices.framework */; };
+		91989C961778BAC900C1042D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91989C951778BAC900C1042D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		91989C891778B86B00C1042D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		91989C8B1778B86B00C1042D /* InstaAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaAddViewController.h; sourceTree = "<group>"; };
 		91989C8C1778B86B00C1042D /* InstaAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaAddViewController.m; sourceTree = "<group>"; };
+		91989C931778BAA000C1042D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		91989C951778BAC900C1042D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91989C961778BAC900C1042D /* QuartzCore.framework in Frameworks */,
+				91989C941778BAA000C1042D /* MobileCoreServices.framework in Frameworks */,
 				91989C711778B86B00C1042D /* UIKit.framework in Frameworks */,
 				91989C731778B86B00C1042D /* Foundation.framework in Frameworks */,
 				91989C751778B86B00C1042D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,8 @@
 		91989C6F1778B86B00C1042D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91989C951778BAC900C1042D /* QuartzCore.framework */,
+				91989C931778BAA000C1042D /* MobileCoreServices.framework */,
 				91989C701778B86B00C1042D /* UIKit.framework */,
 				91989C721778B86B00C1042D /* Foundation.framework */,
 				91989C741778B86B00C1042D /* CoreGraphics.framework */,
@@ -214,7 +222,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -245,7 +254,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -261,9 +271,12 @@
 		91989C911778B86B00C1042D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaAdd/InstaAdd-Prefix.pch";
 				INFOPLIST_FILE = "InstaAdd/InstaAdd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -272,9 +285,12 @@
 		91989C921778B86B00C1042D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaAdd/InstaAdd-Prefix.pch";
 				INFOPLIST_FILE = "InstaAdd/InstaAdd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -299,6 +315,7 @@
 				91989C921778B86B00C1042D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
